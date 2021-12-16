@@ -1,5 +1,5 @@
-# Not Only Juice 
-###### made with love from Start
+# Coloma, WI 
+###### sites made with love from Start
 
 ### What is Start?
 Start is a custom starter WordPress theme fully equipped with ACF site options ~~& page sections~~ to make things easy. (Thanks gutenberg ( ͡❛ ෴ ͡❛))
