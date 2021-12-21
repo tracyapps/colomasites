@@ -57,11 +57,8 @@
 	}
 }
 
-
 // ---------------- 02. Mixins
-
 // Style mixins
-
 
 // Responsive mixins
 // using breakpoint, but helping readability
@@ -164,7 +161,11 @@
 	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
-// ---------------- 03. Keyframes
+// ---------------- 03. Functions
+
+@function hexToRGB($hex) {
+	@return red($hex), green($hex), blue($hex);
+}
 
 // ---------------- 04. Custom Block Color Themes
 

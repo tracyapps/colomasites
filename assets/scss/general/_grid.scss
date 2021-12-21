@@ -35,3 +35,20 @@
 		}
 	}
 }
+
+@include tablet-portrait  {
+	.wp-block-columns {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.wp-block-column[style*=flex-basis].block-on-tablet-down {
+		width: 100%;
+		flex: 1;
+		flex-grow: 1;
+
+		+ .wp-block-column[style*=flex-basis] {
+			width: 100%;
+			flex-basis: 100% !important;
+		}
+	}
+}

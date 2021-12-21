@@ -22,7 +22,7 @@
 		--header--nav_text_color:		#fff;
 
 		--smaller_header--background_color: #357B66;
-		--smaller_header--nav_text_color: #A88548;
+		--smaller_header--nav_text_color: #c3e9f3;
 
 		--nav_item--background_color: transparent;
 		--nav_item--text_color: currentColor;
@@ -30,7 +30,7 @@
 		--nav_item_hover--background_color: #fff;
 		--nav_item_hover--text_color: #884E41;
 
-		--page_header--page_title: #884E41;
+		--page_header--page_title: #c3e9f3;
 		--page_header--page_tagline: #A38551;
 
 		--button--background_color: #50AF71;

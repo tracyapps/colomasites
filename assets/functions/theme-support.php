@@ -12,6 +12,15 @@ function start_theme_support() {
 	// Add RSS Support
 	add_theme_support( 'automatic-feed-links' );
 
+	// Add theme support for selective refresh for widgets.
+	add_theme_support( 'customize-selective-refresh-widgets' );
+
+	// Add support for Block Styles.
+	add_theme_support( 'wp-block-styles' );
+
+	// Add support for full and wide align images.
+	add_theme_support( 'align-wide' );
+
 	// Add Support for WP Controlled Title Tag
 	add_theme_support( 'title-tag' );
 
@@ -24,33 +33,7 @@ function start_theme_support() {
 		)
 	);
 
-	// Adding post format support
-	add_theme_support( 'post-formats',
-		array(
-			'aside',
-			// title less blurb
-			'gallery',
-			// gallery of images
-			'link',
-			// quick link to other site
-			'image',
-			// an image
-			'quote',
-			// a quick quote
-			'status',
-			// a Facebook like status update
-			'video',
-			// video
-			'audio',
-			// audio
-			'chat'
-			// chat transcript
-		)
-	);
-
-	// Set the maximum allowed width for any content in the theme, like oEmbeds and images added to posts.
-	$GLOBALS[ 'content_width' ] = apply_filters( 'start_theme_support', 1200 );
-
+	
 } /* end theme support */
 
 add_action( 'after_setup_theme', 'start_theme_support' );

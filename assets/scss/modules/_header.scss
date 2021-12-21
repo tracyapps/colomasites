@@ -208,7 +208,7 @@
 
 		a {
 			display: block;
-			padding: 0.5em 1.25em;
+			padding: 0.5em 1.05em;
 			text-decoration: none;
 			transition: all $button-transition-speed ease-in-out;
 			text-align: left;
@@ -254,6 +254,17 @@
 		}
 
 	}
+}
+
+.page_featured_image_container:after {
+	bottom: 0;
+	content: "";
+	left: 0;
+	opacity: .6;
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: var(--header_dark--background_color);
 }
 
 .no-featured-image .page_heading_area {

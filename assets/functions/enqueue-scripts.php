@@ -21,3 +21,16 @@ function site_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'site_scripts', 999 );
+
+/**
+ * Enqueue block editor script.
+ *
+ *
+ * @return void
+ */
+function start_block_editor_script() {
+
+	wp_enqueue_script( 'start-editor', get_theme_file_uri( '/assets/js/editor.js' ), array( 'wp-blocks', 'wp-dom' ), wp_get_theme()->get( 'Version' ), true );
+}
+
+add_action( 'enqueue_block_editor_assets', 'start_block_editor_script' );

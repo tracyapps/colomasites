@@ -82,10 +82,9 @@ footer.site-footer {
 		}
 	}
 
-	.container {
-		p {
-			padding: 0;
-		}
+	p {
+		width: 90%;
+		max-width: none;
 	}
 
 }
