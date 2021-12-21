@@ -11,12 +11,22 @@ $background_choices_available = array (
 );
 
 $color_theme_list = array (
-	'neutral-light' 		=> 'Neutral - Light',
-	'neutral-dark' 		=> 'Neutral - Dark',
+	'bold'	=> 'Bold',
+	'chocolate-bunny'	=> 'Chocolate Bunny',
+	'country-inn'	=> 'Country Inn',
+	'earthy' 		=> 'Earthy',
+	'farmstead' 		=> 'Farmstead',
 	'green-field'	=> 'Green Field',
+	'harvest'	=> 'Harvest',
+	'neutral-dark' 		=> 'Neutral - Dark',
+	'neutral-light' 		=> 'Neutral - Light',
+	'neutral-trend' 		=> 'Neutral Trend',
+	'neutral-yellow' 		=> 'Neutral Yellow',
 	'sale-at-the-gap' => 'Sale at the Gap',
 	'spice-late'	=> 'Spice Late',
 	'spice-late-dark'	=> 'Spice Late - Dark',
+	'trendy-rainbow' => 'Trendy Rainbow',
+	'vintage-rocket'	=> 'Vintage Rocket',
 );
 
 $typography_theme_list = array (
