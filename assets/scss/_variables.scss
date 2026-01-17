@@ -1,13 +1,63 @@
 //
 // Global Variables
 //
-// (colors & typography changed to CSS vars and theme options)
-//
-// 01. Grid & Layout
-// 02. Breakpoints
-// 03. Decorative & Animation
+// 00. Colors
+// 01. Typography
+// 02. Grid & Layout
+// 03. Breakpoints
+// 04. Decorative & Animation
 
-// ---------------- 01. Grid & Layout
+
+// ---------------- 00. Colors
+$dark: #1d1a1a;				// 	--dark
+$dark_green: #082b29;		//	--dark_green
+$medium_green: #167a73;		//	--medium_green
+$light_green: #94b6a5;		//	--light_green
+$cream: #ede5b6;			//	--cream
+$light_cream: #f0ecd5;		//	--light_cream
+$dark_red: #3b1818;			//	--dark_red
+$medium_red: #b52f2f;		//	--medium_red
+$light_red: #e0caca;		//	--light_red
+$light_brick: #de9b93;		//	--light_brick
+$brick: #c26559;			//	--brick
+$dark_brick: #944d44;		//	--dark_brick
+$brown: #8B7355;			//	--brown
+$orange: #F4A460;			//	--orange
+$white: #fff;				//	--white
+
+
+$type-sm: clamp(1.26rem, 0.18vi + 1.17rem, 1.48rem);	//	--type-sm
+$type-base: clamp(1.6rem, 0.33vi + 1.43rem, 2rem);		//	--type-base
+$type-md: clamp(2.03rem, 0.56vi + 1.75rem, 2.7rem);		//	--type-md
+$type-lg: clamp(2.58rem, 0.89vi + 2.14rem, 3.65rem);	//	--type-lg
+$type-xl: clamp(3.28rem, 1.37vi + 2.59rem, 4.92rem);	//	--type-xl
+$type-xxl: clamp(4.16rem, 2.07vi + 3.13rem, 6.64rem);	//	--type-xxl
+$type-xxxl: clamp(5.29rem, 3.07vi + 3.75rem, 8.97rem);	//	--type-xxxl
+
+
+// ---------------- 01. Typography
+
+@mixin inter($weight: 200) {
+	font-family: "Inter", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: $weight;
+	font-style: normal;
+	font-variation-settings:
+			"slnt" 0;
+}
+@mixin fraunces($weight: 400) {
+	font-family: "Fraunces", serif;
+	font-optical-sizing: auto;
+	font-weight: $weight;
+	font-style: normal;
+	font-variation-settings:
+			"SOFT" 0,
+			"WONK" 1;
+}
+
+
+
+// ---------------- 02. Grid & Layout
 
 $gutter-width:   30px;   // used in sections
 $sticky-footer:  true;   // change to "false" to remove and footer will just follow the content size.
@@ -15,7 +65,7 @@ $golden-large:	63.8%;
 $max-text-line-width: 850px;
 
 
-// ---------------- 02. Breakpoints
+// ---------------- 03. Breakpoints
 // (concept borrowed from http://tapps.us/breakpoint-article )
 
 // Define breakpoints
@@ -37,7 +87,7 @@ $tablet-portrait-down: max-width $breakpoint-medium;
 $tablet-landscape-up:  $breakpoint-medium;
 
 
-// ---------------- 03. Decorative & Animation
+// ---------------- 04. Decorative & Animation
 
 $border-radius: 			3em;
 $button-transition-speed: 	200ms;
