@@ -32,7 +32,7 @@
 	 * (This is all using ACF pro plugin to more easily handle custom site options)
 	 * */
 	// default theme filename, if none of the below conditions is met
-	$theme_colors = 'country-inn';
+	$theme_colors = 'spice-late-dark';
 	$typography_choice = 'serif';
 
 	$are_theme_colors_selected = get_field( 'color_theme', 'option' );
