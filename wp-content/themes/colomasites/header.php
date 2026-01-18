@@ -24,29 +24,9 @@
 
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php
-	/*
-	 *  ** start THEME DESIGN **
-	 *  first we check on what options are selected with conditional statements,
-	 *  then we import the corresponding include file into the header.
-	 *
-	 * (This is all using ACF pro plugin to more easily handle custom site options)
-	 * */
-	// default theme filename, if none of the below conditions is met
-	$theme_colors = 'spice-late-dark';
-	$typography_choice = 'serif';
-
-	$are_theme_colors_selected = get_field( 'color_theme', 'option' );
-	if( '' != $are_theme_colors_selected ) {
-		$theme_colors = get_field( 'color_theme', 'option' );
-	}
-
-	$are_typography_choices_selected = get_field( 'typography_theme', 'option' );
-	if( '' != $are_typography_choices_selected ) {
-		$typography_choice = get_field( 'typography_theme', 'option' );
-	}
-	// now we import that 'theme choice' variable file into the header
-	include( 'assets/css/variables/theme-' . esc_html( $theme_colors ) . '.php' );
-	include( 'assets/css/variables/fonts-' . esc_html( $typography_choice ) . '.php' );
+	// load css style vars
+		include( 'assets/css/variables/theme-spice-late-dark.php' );
+		include( 'assets/css/variables/fonts-serif.php' );
 	?>
 	<?php wp_head(); ?>
 </head>
